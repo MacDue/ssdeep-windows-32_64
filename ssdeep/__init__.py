@@ -7,7 +7,11 @@ import sys
 import ctypes
 from os.path import join
 from os.path import split
-from pip._vendor import six
+
+try:
+    from pip._vendor import six
+except:
+    import six
 
 
 # Length of an individual fuzzy hash signature component
