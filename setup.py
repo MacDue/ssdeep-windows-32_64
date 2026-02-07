@@ -6,4 +6,5 @@ setup(name='ssdeep-windows-32_64',
       author='MacDue (forked from Intezer Labs Ltd)',
       packages=['ssdeep'],
       zip_safe=False,
-      package_data={'ssdeep': ['bin/*.*']})
+      package_data={'ssdeep': ['bin/*.*']},
+      install_requires=['six'])
